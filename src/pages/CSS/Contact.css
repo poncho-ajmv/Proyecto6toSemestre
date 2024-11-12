@@ -1,0 +1,74 @@
+/* Reset básico */
+
+
+/* Estilo del contenedor del formulario de contacto */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px; /* Añadir un poco de espacio alrededor */
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed; /* Fondo de imagen */
+    background-size: cover; /* Asegura que la imagen cubra el fondo */
+}
+
+/* Estilo del formulario */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    padding: 90px; /* Aumentar el espacio interno */
+    width: 1000px; /* Ancho ajustado a 1000px */
+    max-width: 100%; /* Evitar que se salga del contenedor */
+}
+
+/* Estilo de los elementos del formulario */
+.contact-form label {
+    margin-top: 1.5rem; /* Espaciado entre etiquetas */
+    font-weight: bold;
+    font-size: 28px; /* Tamaño de fuente más grande */
+    color: #333; /* Color de texto */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Aumentar el padding */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Tamaño de fuente más grande */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Efecto de transición */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Color del borde al enfocarse */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra del borde al enfocarse */
+    outline: none; /* Sin contorno */
+}
+
+.contact-form textarea {
+    height: 280px; /* Aumentar la altura del textarea */
+    resize: none; /* Deshabilitar el redimensionamiento */
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white;
+    border: none;
+    padding: 15px; /* Aumentar el padding del botón */
+    border-radius: 5px;
+    font-size: 24px; /* Tamaño de fuente más grande para el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+    width: 100%; /* Botón ocupa el 100% del ancho */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}

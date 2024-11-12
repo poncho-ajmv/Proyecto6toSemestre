@@ -1,0 +1,49 @@
+.profile-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+.profile-img, .mascota-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover, .mascota-img:hover {
+    transform: scale(1.1);
+}
+
+.mascota-card {
+    background: #fffaf0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.mascota-card:hover {
+    transform: scale(1.05);
+}
+
+.button-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.button-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.profile-img, .mascota-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Para hacerlas redondas */
+}
+
+.mascota-card {
+    margin: 0 auto;
+}

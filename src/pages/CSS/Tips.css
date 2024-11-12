@@ -1,0 +1,153 @@
+/* Estilos generales */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .chat-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Estilo para el contenedor de chat */
+  .chat-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Estilo para el contenedor de preguntas predeterminadas */
+  .default-questions-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .default-questions-container h2 {
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .question-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contenedor de la entrada del usuario */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  /* Estilos de los botones */
+  .button-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  
+  .send-button,
+  .clear-button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .clear-button {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+  }
+  
+  .clear-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Estilos para el historial de chat */
+  .chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .chat-message {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .chat-message.user .message {
+    background-color: #e3f2fd;
+    color: #333;
+    align-self: flex-end;
+  }
+  
+  .chat-message.bot .message {
+    background-color: #f1f8e9;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  .message {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  .message.user {
+    text-align: right;
+  }
+  
+  .message.bot {
+    text-align: left;
+  }
+  

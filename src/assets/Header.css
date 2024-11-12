@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+.nav-links {
+    list-style: none; /* Sin puntos en la lista */
+    display: flex; /* Alinea los elementos horizontalmente */
+    margin: 0; /* Elimina margen */
+    padding: 0; /* Elimina padding */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+.nav-links a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #fff; /* Color del texto */
+    transition: color 0.3s; /* Transición suave para cambios de color */
+}
+
+.nav-links a:hover {
+    color: #ffa500; /* Color al pasar el ratón */
+}
+
+/* Agrega este código en tu archivo CSS (por ejemplo, Header.css) */
+.logout-button {
+    padding: 8px 16px;
+    background-color: #e74c3c; /* Rojo brillante */
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Rojo más oscuro al hacer hover */
+    cursor: pointer;
+}
+
+.logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.4); /* Sombra de enfoque */
+}
+
+.logout-button .icon {
+    margin-right: 8px;
+}
+
+.logout-button span {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+

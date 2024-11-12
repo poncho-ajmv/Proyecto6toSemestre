@@ -1,0 +1,89 @@
+
+/* Estilo de la película destacada */
+.featured-movie {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.featured-movie h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px; /* Añadir un margen inferior para separar del siguiente texto */
+}
+
+.featured-movie p {
+  font-size: 1.2rem;
+  margin: 5px 0; /* Añadir margen superior e inferior para separar cada párrafo */
+}
+
+/* Contenedor del tráiler */
+.trailer-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Contenedor de actores y directores */
+.cast-container {
+  margin-top: 20px;
+  text-align: center; /* Centra el texto de actores y directores */
+}
+
+.cast-container h2 {
+  margin: 10px 0;
+}
+
+.cast-container ul {
+  list-style-type: none;
+}
+
+/* Estilo de la lista de películas */
+.movies-list {
+  padding: 20px;
+}
+
+.movies-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row_movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col_movies {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.col_movies:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.col_movies img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.col_movies h4 {
+  margin: 10px 0;
+}
+
+.col_movies p {
+  font-size: 0.9rem;
+  color: #666;
+}
